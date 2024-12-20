@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnergyMeme</title>
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+        header {
+            background-image: url('header-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(18, 18, 18, 0.7);
+        }
+        .header-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .header-content img {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+        .header-content h1 {
+            font-size: 48px;
+            color: #76ff03;
+        }
+        .header-content p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .btn {
+            background-color: #76ff03;
+            color: #121212;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .btn:hover {
+            background-color: #64dd17;
+            transform: scale(1.1);
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h2 {
+            font-size: 36px;
+            color: #76ff03;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+        }
+        .content img {
+            flex: 1 1 500px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .content img:hover {
+            transform: scale(1.05);
+        }
+        .content div {
+            flex: 1 1 500px;
+        }
+        footer {
+            background-color: #1e1e1e;
+            color: #9e9e9e;
+            text-align: center;
+            padding: 20px;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content h1 {
+                font-size: 36px;
+            }
+            .header-content p {
+                font-size: 18px;
+            }
+            .btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+            .content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with background image and mascot -->
+    <header>
+        <div class="header-content">
+            <img src="logo.jpg" alt="EnergyMeme Logo">
+            <h1>EnergyMeme</h1>
+            <p>The Future of Sustainable Meme Coins </p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="content">
+            <div>
+                <p>
+                    EnergyMeme is an innovative project combining the power of cryptocurrencies 
+                    with the importance of renewable energy. We're here to make meme coins not 
+                    just fun, but also planet-friendly, with a passionate community and a clear 
+                    goal: building a greener, more exciting future!
+                </p>
+            </div>
+            <img src="about-us.jpg" alt="About Us">
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap">
+        <h2>Roadmap</h2>
+        <img src="roadmap-visual.jpg" alt="Roadmap">
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section id="tokenomics">
+        <h2>Tokenomics</h2>
+        <div class="content">
+            <img src="tokenomics-chart.jpg" alt="Tokenomics">
+            <div>
+                <ul>
+                    <li><strong>50%</strong> Community (Airdrop and rewards)</li>
+                    <li><strong>30%</strong> Growth reserves</li>
+                    <li><strong>20%</strong> Marketing and development</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Interactive Buttons -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="social-buttons">
+            <a href="https://x.com" class="btn">Twitter/X</a>
+            <a href="https://t.me" class="btn">Telegram</a>
+            <a href="mailto:info@energymeme.com" class="btn">Email</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 EnergyMeme. All rights reserved.</p>
+    </footer>
+</body>
+</html>
